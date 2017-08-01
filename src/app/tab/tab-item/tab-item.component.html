@@ -1,0 +1,10 @@
+<li
+  class="tab col"
+  [class.disabled]="disabled"
+>
+  <a [class.active]="active" href="#{{ link }}">{{ label }}</a>
+</li>
+
+<div id="{{ link }}" class="col s12">
+  <ng-content></ng-content>
+</div>
